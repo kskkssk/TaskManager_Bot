@@ -160,7 +160,6 @@ def print_number(message):
             markup = types.InlineKeyboardMarkup()
             button_1 = types.InlineKeyboardButton('Назад', callback_data='back')
             button_2 = types.InlineKeyboardButton('Удалить задачу', callback_data='delete')
-            button_3 = types.InlineKeyboardButton('Изменить дедлайн', callback_data='deadline')
             markup.add(button_1, button_2, button_3)
             bot.send_message(message.chat.id, message.text, reply_markup=markup)
         else:
